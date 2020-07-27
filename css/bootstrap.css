@@ -1,6 +1,6 @@
 .jumbotron {
   margin: auto;
-  height: 57rem;
+  height: 100vh;
 }
 
 @media (min-width: 768px) {
