@@ -4,6 +4,11 @@ html {
   overflow-x: auto;
 }
 
+header {
+  position: fixed;
+  z-index: 10;
+  width: 100vw
+}
 
 .navbarbg {
   background-color: #F98F3B;
@@ -14,7 +19,7 @@ html {
 }
 
 .primary-button {
-  border-color: grey;
+  border-color: black;
   background-color: grey;
   margin-right: 2rem;
   color: black;
@@ -41,13 +46,13 @@ html {
 }
 
 .jumbo-text {
-  top: 38vh;
+  top: 44vh;
   text-align: center;
   position: relative;
   -webkit-animation: slide-in-bck-bottom 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   -moz-animation: slide-in-bck-bottom 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation: slide-in-bck-bottom 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  z-index: 10;
+  z-index: 6;
 }
 
 .bg-text {
@@ -56,7 +61,6 @@ html {
   font-weight: bold;
   border: 3px solid #f1f1f1;
   position: relative;
-  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80vw;
@@ -159,8 +163,8 @@ html {
   text-align: center;
   left: 5%;
   bottom: 15px;
-  -webkit-filter: blur(3px);
-  filter: blur(3px);
+  -webkit-filter: blur(7px);
+  filter: blur(7px);
 }
 
 .d1 {
@@ -172,10 +176,11 @@ html {
   background-position: 0 50%;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
   top: 50%;
+  left: 5%;
   transform: translateY(-50%);
   z-index: 4;
   animation: dd1 10s 1, dd12 10s 1;
-  animation-delay: 2s, 14s;
+  animation-delay: 1s, 11s;
 }
 
 .d2 {
@@ -190,7 +195,8 @@ html {
   transform: translateY(-50%);
   z-index: 1;
   animation: dd2 10s 2;
-  animation-delay: 2s;
+  animation-delay: 1s;
+
 }
 
 .d3 {
@@ -207,7 +213,7 @@ html {
   transform: translateY(-50%);
   z-index: 3;
   animation: dd3 10s 2;
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
 
 .d4 {
@@ -216,21 +222,21 @@ html {
   background-image: url(https://scontent-lhr8-1.xx.fbcdn.net/v/t1.0-9/82368463_568017610452664_8853180254332649472_o.jpg?_nc_cat=109&_nc_sid=8bfeb9&_nc_ohc=syOH633Y2qkAX_5GOSK&_nc_ht=scontent-lhr8-1.xx&oh=2d297018ee68f2acfc2b36d392bde81c&oe=5F460DDC);
   background-size: 2700px 1500px;
   height: 70vh;
-  width: 25vw;
+  width: 24vw;
   left: 60vw;
   background-position: -70vw 50%;
   top: 50%;
   transform: translateY(-50%);
   z-index: 1;
   animation: dd4 10s 2;
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
 
 @keyframes dd1 {
   0% {}
 
   50% {
-    width: 90vw;
+    width: 80vw;
   }
 }
 
@@ -276,17 +282,17 @@ html {
     color: black;
   }
 
-.secondary-button {
-  margin-right: 0;
-}
+  .secondary-button {
+    margin-right: 0;
+  }
 
-.primary-button{
-  margin-right: 0;
-}
+  .primary-button {
+    margin-right: 0;
+  }
 
-.jumbo-para {
-  color: grey;
-}
+  .jumbo-para {
+    color: grey;
+  }
 
   .main2 {
     opacity: 0;
